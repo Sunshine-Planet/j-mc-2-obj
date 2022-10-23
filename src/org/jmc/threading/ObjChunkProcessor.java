@@ -31,8 +31,8 @@ public class ObjChunkProcessor
 {
 	private int chunk_idx_count=-1;
 	
-	private ArrayList<Face> optimisedFaces = new ArrayList<Face>();
-	private ArrayList<Face> faces = new ArrayList<Face>();
+	ArrayList<Face> optimisedFaces = new ArrayList<Face>();
+	ArrayList<Face> faces = new ArrayList<Face>();
 
 	/**
 	 * See: {@link #addFace(Vertex[], Vertex[], UV[], Transform, NamespaceID) addFace}

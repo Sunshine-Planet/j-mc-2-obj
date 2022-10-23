@@ -718,7 +718,7 @@ public class ExportWindow extends JmcFrame implements ProgressCallback {
 						exportThread = new Thread(new Runnable() {
 							@Override
 							public void run() {
-								Exporter exporter = new ObjExporter();
+								Exporter exporter = new UsdExporter();
 								exporter.export(ExportWindow.this);
 								
 								btnStartExport.setEnabled(true);
@@ -791,7 +791,7 @@ public class ExportWindow extends JmcFrame implements ProgressCallback {
 					exportThread = new Thread(new Runnable() {
 						@Override
 						public void run() {
-							Exporter exporter = new ObjExporter();
+							Exporter exporter = new UsdExporter();
 							exporter.export(ExportWindow.this);
 							
 							btnStartExport.setEnabled(true);
